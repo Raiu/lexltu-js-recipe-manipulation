@@ -35,7 +35,7 @@ const instructions = [];
 if (instructionsList) {
     instructionsList.forEach(item => {
         instructions.push({
-            order: getChildIndex(item),
+            order: getChildIndex(item) + 1,
             text: item.textContent,
         });
     });
